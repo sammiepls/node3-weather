@@ -1,0 +1,108 @@
+body {
+  font-family: 'Avenir';
+  margin: 0;
+  color: #857c7d;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #eff2f7;
+  height: 30vh;
+}
+
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  font-size: 1.5rem;
+}
+
+header nav a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 1px; 
+  margin: 0 1rem;
+  color: #7c7c7c;
+}
+
+header nav a:hover {
+  text-shadow:0 0 1px #49443c;
+}
+
+main {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+footer {
+  background: #f6f5fa;  
+  height: 10vh;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid;
+  outline: none;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+input::placeholder {
+  opacity: 0.3;
+}
+
+button {
+  margin: 2rem auto;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  outline: none;
+}
+
+button:hover, button:focus, button:active {
+  background: #49443c;
+  color: #fff;
+}
+
+.About {
+  display: grid;
+  grid-template-areas: 'img title' 'img content';
+  grid-auto-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+}
+
+.About img {
+  grid-area: img;
+}
+
+.About h2 {
+  grid-area: title;
+  margin: 0;
+}
+
+.About p {
+  margin: 0;
+}
