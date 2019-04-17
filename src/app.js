@@ -93,6 +93,6 @@ app.get('*', (req, res) => {
   res.render('404', {error: '404 error'})
 })
 
-app.listen(PORT, () => {
-  console.log(`Server is at ${PORT}`)
+app.listen(port, () => {
+  console.log(`Server is at ${port}`)
 })
