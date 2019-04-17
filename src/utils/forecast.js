@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, cb) => {
     } else if(body.error) {
       cb('Unable to find weather for that location')
     } else {
-      cb(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipProbability}% chance of rain.`)
+      cb(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipProbability}% chance of rain. The temperature at it's lowest is ${body.daily.data[0].temperatureMin}°C and at it's highest is ${body.daily.data[0].temperatureMax}°C`)
     }
   })
 }
